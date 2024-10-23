@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Size</title>
+</head>
+<body>
+    <p id="windowSize">Window Width: <span id="width"></span>, Window Height: <span id="height"></span></p>
+
+    <script>
+        function updateWindowSize() {
+            document.getElementById('width').textContent = window.innerWidth;
+            document.getElementById('height').textContent = window.innerHeight;
+        }
+
+        window.onresize = updateWindowSize;
+        window.onload = updateWindowSize;
+    </script>
+</body>
+</html>
